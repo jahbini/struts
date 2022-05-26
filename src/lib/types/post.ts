@@ -3,6 +3,7 @@ export type PostConfig = {
     [kind: string]: ('fed' | 'mastodon' | 'flickr' | 'github' | 'twitter')[]
   }
   comment?: CommentConfig
+  summary?: string
 }
 
 export type CommentConfig = {

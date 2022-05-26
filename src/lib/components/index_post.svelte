@@ -2,11 +2,13 @@
   import Status from '$lib/components/post_status.svelte'
   import Reply from '$lib/components/post_reply.svelte'
   import Image from '$lib/components/prose/img.svelte'
+  import Card from '$lib/components/card.svelte'
   export let post: Urara.Post
   export let loading: 'eager' | 'lazy' = 'lazy'
   export let decoding: 'async' | 'sync' | 'auto' = 'async'
 </script>
 
+<p>Priority = {post.priority}</p>
 {#if post.layout === 'photo'}
   <article
     itemscope

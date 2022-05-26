@@ -8,6 +8,7 @@ tags:
 cover: '/hello-world/cover.webp'
 ---
 
+### BooGa Loo!
 Welcome to Urara! this article contains some basic operations to help you quickly get started.
 
 ## Development

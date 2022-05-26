@@ -43,6 +43,7 @@ export const genPosts: GenPostsFunction = ({
     }))
     .filter((post, index) => (!filterUnlisted || !post.flags?.includes('unlisted')) && (!postLimit || index < postLimit))
     .sort((a: Urara.Post, b: Urara.Post) => Date.parse(b.published ?? b.created) - Date.parse(a.published ?? a.created))
+    .sort((a: Urara.Post, b: Urara.Post) => ( a.priority ?? 500 ) - (b.priority ?? 499 ))
 
 /**
  * Generate Tags List
